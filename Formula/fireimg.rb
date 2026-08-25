@@ -5,21 +5,21 @@
 class Fireimg < Formula
   desc "Upload and delete FireImg images from the command line"
   homepage "https://www.fireimg.com"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.1.0/fireimg_Darwin_x86_64.tar.gz"
-      sha256 "6277811332766e6d134a642ccf34da96f9dd654edb610bb62b8e566099ac751f"
+      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.2.0/fireimg_Darwin_x86_64.tar.gz"
+      sha256 "1d4073948e537bdeab91278f2ed5ad6f587ac634dc9af3588a94769a1fed25cb"
 
       def install
         bin.install "fireimg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.1.0/fireimg_Darwin_arm64.tar.gz"
-      sha256 "8552368e608dea24deb347805963994acb0cc7f037c23558c78b7707283f9f5f"
+      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.2.0/fireimg_Darwin_arm64.tar.gz"
+      sha256 "c801d494d3ce1335a864aa6a18142ecf91e412378f43aba64e52f3e4fc2a21e9"
 
       def install
         bin.install "fireimg"
@@ -29,15 +29,15 @@ class Fireimg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.1.0/fireimg_Linux_x86_64.tar.gz"
-      sha256 "f0e476ee71fd5c5200cdbb3b4bbc92267a96aaa1a21c6adce1a93d165925c4de"
+      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.2.0/fireimg_Linux_x86_64.tar.gz"
+      sha256 "b33caedcc5b44a99a8d24997e14f3c9db7e2f9bbc32d3741d57e8c497906420d"
       def install
         bin.install "fireimg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.1.0/fireimg_Linux_arm64.tar.gz"
-      sha256 "3bf66bdf28d1d77f308fae5d0181d8a512d59dd8312b3f16d69decf6d26126e9"
+      url "https://github.com/FirelitStudio/fireimg-cli/releases/download/v0.2.0/fireimg_Linux_arm64.tar.gz"
+      sha256 "994a000f71eb490fd6c3cae236140d892e20e6a7ac89a661331b4fa845e89616"
       def install
         bin.install "fireimg"
       end
